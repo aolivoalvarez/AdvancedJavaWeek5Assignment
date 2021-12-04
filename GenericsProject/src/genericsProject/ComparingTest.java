@@ -1,3 +1,11 @@
+/*Alexis Olivo-Alvarez
+
+INEW-2338 2801
+
+30 November 2021
+
+Create a generic class that takes any array and outputs the minimum and maximum value */
+
 package genericsProject;
 
 //import for user input
@@ -32,10 +40,12 @@ public class ComparingTest {
 		System.out.print("Please enter a word or phrase: ");
 		strArray[1] = input.nextLine();
 		
+		//comparing
 		Comparing i = new Comparing(intArray);
 		Comparing d = new Comparing(dblArray);
 		Comparing s = new Comparing(strArray);
 		
+		//output
 		System.out.printf("The maximum integer is: %d", i.max);
 		System.out.printf("The minimum integer is: %d", i.min);
 		System.out.printf("The maximum double is: %d", d.max);

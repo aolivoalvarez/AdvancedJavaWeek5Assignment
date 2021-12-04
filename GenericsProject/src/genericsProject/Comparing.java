@@ -2,10 +2,10 @@ package genericsProject;
 
 public class Comparing<T> {
 	
-	public T min;
+	public T min; //holds min and max values
 	public T max;
 
-	public <T> Comparing(T[] array){
+	public <T> Comparing(T[] array){ //constructors
 		
 		min = minimum(array);
 		max = maximum(array);
@@ -19,7 +19,7 @@ public class Comparing<T> {
 		min = minimum(array);
 		max = maximum(array);
 	}
-	public <T extends Comparable<T>> T maximum(T[] array) {
+	public <T extends Comparable<T>> T maximum(T[] array) { //finds maximum from array
 		
 		T m = array[0];
 		for (T object : array) {
@@ -33,7 +33,7 @@ public class Comparing<T> {
 		
 	}
 	
-	public <T extends Comparable<T>> T minimum(T[] array) {
+	public <T extends Comparable<T>> T minimum(T[] array) { //finds minimum from array
 		
 			T m = array[0];
 			for (T object : array) {
